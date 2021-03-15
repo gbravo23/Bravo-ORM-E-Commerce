@@ -10,13 +10,13 @@ class Product extends Model { }
 Product.init(
   {
 
-    product_name: sequelize.STRING,
-    price: sequelize.DECIMAL,
-    stock: sequelize.INTEGER,
+    product_name: DataTypes.STRING,
+    price: DataTypes.DECIMAL,
+    stock: DataTypes.INTEGER,
     category_id: {
-      allowNull: false,
-      autoIncrement: true,
-      type: sequelize.INTEGER,
+      // allowNull: false,
+      // autoIncrement: true,
+      type: DataTypes.INTEGER,
     }
   },
   {
